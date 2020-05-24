@@ -7,6 +7,6 @@ public class Tester extends BaseTester {
     // клиент: client <полное имя класса>
     // сервер: bank <полное имя класса>
     public static void main(final String... args) {
-        new Tester().add("bank", BankTest.class).add("client", BankClientTest.class).run(args);
+        new Tester().add("bank", BankServerTest.class).add("client", BankClientTest.class).run(args);
     }
 }
