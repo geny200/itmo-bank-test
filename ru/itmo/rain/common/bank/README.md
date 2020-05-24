@@ -6,6 +6,8 @@
 * `RemotePerson` и `LocalPerson` должны реализовывать интерфейс [Person](/Person.java/ "Person")
 * `RemoteAccount` и `LocalAccount` должны реализовывать интерфейс [Account](/Account.java/ "Account")
 * `RemoteBank` должен реализовывать интерфейс [Bank](/Bank.java/ "Bank")
-Тестирование
+
+
+    Тестирование
 * клиент: `client <полное_имя_класса>`
 * сервер: `bank <полное_имя_класса>`
