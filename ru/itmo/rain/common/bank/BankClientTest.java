@@ -9,6 +9,13 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
+/**
+ * Tests for the server.
+ *
+ * @author Eugene Geny200
+ * @author Egor
+ * @see info.kgeorgiy.java.advanced.base.BaseTest
+ */
 public class BankClientTest extends BaseTest {
     private final String passport = "998244353";
     private final String name = "Smite";
@@ -22,7 +29,6 @@ public class BankClientTest extends BaseTest {
         void apply(T t, U u) throws RemoteException, InterruptedException;
     }
 
-    //eugene
     @Test
     public void testWrongPerson() {
         test(((bank, bankClient) -> {
@@ -53,7 +59,6 @@ public class BankClientTest extends BaseTest {
         }));
     }
 
-    //egor
     @Test
     public void testClient() {
         test(((bank, bankClient) -> {

@@ -3,6 +3,9 @@ package ru.ifmo.rain.common.bank;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+/**
+ * @author Georgiy Korneev (kgeorgiy@kgeorgiy.info)
+ */
 public interface Account extends Remote {
     /**
      * @return {@link java.lang.String} - account identifier

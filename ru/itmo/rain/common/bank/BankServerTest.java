@@ -12,6 +12,13 @@ import java.util.concurrent.*;
 
 import org.junit.Test;
 
+/**
+ * Tests for the server.
+ *
+ * @author Egor
+ * @author Eugene Geny200
+ * @see info.kgeorgiy.java.advanced.base.BaseTest
+ */
 public class BankServerTest extends BaseTest {
     private final String passport = "998244353";
     private final String name = "Smite";
@@ -25,7 +32,6 @@ public class BankServerTest extends BaseTest {
         void apply(T t) throws RemoteException, InterruptedException;
     }
 
-    //eugene
     @Test
     public void createAccountAndChangeAmount() {
         test(bank -> {
@@ -119,7 +125,6 @@ public class BankServerTest extends BaseTest {
             }
         });
     }
-    //egor
 
     @Test
     public void createPerson() {
@@ -200,7 +205,7 @@ public class BankServerTest extends BaseTest {
     }
 
     @Test
-    public void setAccountAmountRemotePersonAfterLocalPerson() throws RemoteException {
+    public void setAccountAmountRemotePersonAfterLocalPerson() {
         test(bank -> {
             int amount = 500;
             bank.createPerson(name, surname, passport);
@@ -214,7 +219,7 @@ public class BankServerTest extends BaseTest {
     }
 
     @Test
-    public void setAccountAmountRemotePersonBeforeLocalPerson() throws RemoteException {
+    public void setAccountAmountRemotePersonBeforeLocalPerson() {
         test(bank -> {
             int amount = 500;
             bank.createPerson(name, surname, passport);
@@ -228,7 +233,7 @@ public class BankServerTest extends BaseTest {
     }
 
     @Test
-    public void setAccountAmountLocalPerson() throws RemoteException {
+    public void setAccountAmountLocalPerson() {
         test(bank -> {
             int amount = 500;
             bank.createPerson(name, surname, passport);
@@ -243,7 +248,7 @@ public class BankServerTest extends BaseTest {
     }
 
     @Test
-    public void createManyAccountRemotePersonsAndSetAmountMultiThreading() throws RemoteException {
+    public void createManyAccountRemotePersonsAndSetAmountMultiThreading() {
         test(bank -> {
             final int countOfPersons = 100;
             final int countOfAccount = 10;
