@@ -12,7 +12,7 @@ import java.util.concurrent.*;
 
 import org.junit.Test;
 
-public class BankTest extends BaseTest {
+public class BankServerTest extends BaseTest {
     private final String passport = "998244353";
     private final String name = "Smite";
     private final String surname = "Cowley";
@@ -289,7 +289,7 @@ public class BankTest extends BaseTest {
     }
 
     private static void test(ConsumerWithRemoteException<Bank> bankConsumer) {
-        final int port = BankTest.port++;
+        final int port = BankServerTest.port++;
 
         try (BankServer server = createCUT()) {
             server.start(port);
