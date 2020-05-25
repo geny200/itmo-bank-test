@@ -17,9 +17,6 @@
 --------------------------------
 Все тесты запускаются через класс `Tester`
 
-Пример через терминал 
-- `java -cp . -p . -ru.ifmo.rain.common.bank.Tester client ru.ifmo.rain._last_name_.bank.Client`
-
 Пример через IDEA 
 - main class `ru.ifmo.rain.common.bank.Tester`
 - program arguments `client ru.ifmo.rain._last_name_.bank.Client`
