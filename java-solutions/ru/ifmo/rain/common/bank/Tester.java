@@ -13,20 +13,20 @@ public class Tester extends BaseTester {
      * Use to start:
      * <ul>
      *         <li> {@code java <class_name> client <canonical_class_name>}
-     *         calls {@link ru.ifmo.rain.common.bank.BankClientTest}
+     *         calls {@link BankClientTest}
      *         </li>
      *         <li> {@code java <class_name> bank <canonical_class_name>}
-     *         calls {@link ru.ifmo.rain.common.bank.BankServerTest}
+     *         calls {@link BankServerTest}
      *         </li>
      * </ul>
      *
-     * @param args array of input parameters ({@link java.lang.String}).
-     * @see ru.ifmo.rain.common.bank.BankServerTest
-     * @see ru.ifmo.rain.common.bank.BankClientTest
-     * @see ru.ifmo.rain.common.bank.BankServer
-     * @see ru.ifmo.rain.common.bank.BankClient
+     * @param args array of input parameters ({@link String}).
+     * @see BankServerTest
+     * @see BankClientTest
+     * @see BankServer
+     * @see BankClient
      */
     public static void main(final String... args) {
-        new Tester().add("bank", BankServerTest.class).add("client", BankClientTest.class).run(args);
+        new Tester().add("bank", BankServerTest.class).add("client", BankClientTest.class).add("client", BankClientTest.class).run(args);
     }
 }

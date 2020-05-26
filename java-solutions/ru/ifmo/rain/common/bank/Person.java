@@ -1,7 +1,5 @@
 package ru.ifmo.rain.common.bank;
 
-import ru.ifmo.rain._last_name_.bank.RemoteAccount;
-
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
@@ -12,32 +10,26 @@ import java.rmi.RemoteException;
 public interface Person extends Remote {
 
     /**
-     * @return {@link java.lang.String} - last name of a person.
+     * @return {@link String} - last name of a person.
      */
     String getSurname()
             throws RemoteException;
 
     /**
-     * @return {@link java.lang.String} - passport of a person.
+     * @return {@link String} - passport of a person.
      */
     String getPassport()
             throws RemoteException;
 
     /**
-     * @return {@link java.lang.String} - first name of a person.
+     * @return {@link String} - first name of a person.
      */
     String getName()
             throws RemoteException;
 
     /**
-     * @return {@link ru.ifmo.rain.common.bank.Account} - person account.
+     * @return {@link Account} - person account.
      */
     Account getAccount(String accountName)
-            throws RemoteException;
-
-    /**
-     * @param accountName {@link ru.ifmo.rain._last_name_.bank.RemoteAccount} - added account to person.
-     */
-    void setAccount(RemoteAccount accountName)
             throws RemoteException;
 }
