@@ -1,4 +1,4 @@
-package ru.ifmo.rain.common.bank;
+package ru.ifmo.test.common.bank;
 
 import info.kgeorgiy.java.advanced.base.BaseTest;
 import org.junit.Assert;

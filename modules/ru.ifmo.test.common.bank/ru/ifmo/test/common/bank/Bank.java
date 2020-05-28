@@ -1,4 +1,4 @@
-package ru.ifmo.rain.common.bank;
+package ru.ifmo.test.common.bank;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
